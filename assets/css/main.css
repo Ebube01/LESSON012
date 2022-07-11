@@ -1,20 +1,27 @@
+:root {
+    --container-padding: 10px 80px;
+}
+
 body{
     margin: 0;
 }
 .landing-page{
     height: 100vh;
     background-color: #bae8e8;
-    padding: 80px;
+    padding: var(--container-padding);
     padding-bottom: 0px;
+    color: purple;
 } 
-
+.landing-page h2{
+    font-size: 80px;
+}
 header{
     display: flex;
     justify-content: space-between;
     /* to align the header set to baseline */
     align-items: baseline;
     /* to pull the line under the header */
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid #272343;
 }
 
 h1 {
@@ -40,4 +47,31 @@ nav a{
     color: #ffffff;
     border-radius: 10px;
 
+}
+.parent h3{
+    text-decoration: underline;
+}
+.parent{
+    padding: var(--container-padding);
+    font-weight: normal;
+}
+.parent ul{
+    padding: 0;
+    list-style-position: inside;
+    text-decoration: none;
+}
+.parent li{
+    margin: 10px 0;
+}
+.child{
+    background-color: purple;
+    padding: var(--container-padding);
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 40px;
+}
+.child div{
+    color: #ffffff;
+    /* width: 20vw; */
+    margin: 20px 0;
 }
